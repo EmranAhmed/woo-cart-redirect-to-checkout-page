@@ -1,8 +1,9 @@
-=== Woo Cart Redirect To Checkout Page ===
-Contributors: EmranAhmed
-Tags: woocommerce, checkout, cart, redirect
-Requires at least: 4.3
-Tested up to: 4.5.3
+=== WooCommerce Cart Redirect To Checkout Page ===
+Contributors: EmranAhmed, getwooplugins
+Tags: woocommerce, checkout, cart, redirect, redirect to checkout, add to cart, added to cart
+Requires at least: 4.7
+Tested up to: 4.9
+Requires PHP: 5.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -10,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 After successfully product added to cart redirect to checkout page.
 
 == Description ==
-The **Woo Cart Redirect To Checkout Page** plugin for WooCommerce enables you to redirect directly checkout page rather than redirect to cart page.
+The **WooCommerce Cart Redirect To Checkout Page** plugin for WooCommerce enables you to redirect directly checkout page rather than redirect to cart page.
 
 = Links =
 * [Github](https://github.com/EmranAhmed/woo-cart-redirect-to-checkout-page/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=Woo+AWS+S3+Readme&utm_content=Repo+Link)
@@ -21,7 +22,7 @@ The **Woo Cart Redirect To Checkout Page** plugin for WooCommerce enables you to
 
 1. Login to your the admin panel
 2. Navigate to Plugins -> Add New
-3. Search **Woo Cart Redirect To Checkout Page**
+3. Search **WooCommerce Cart Redirect To Checkout Page**
 4. Click install and activate respectively.
 
 ### Manual Install From WordPress Dashboard
@@ -55,6 +56,10 @@ If you are unable to use any of the methods due to internet connectivity and fil
 - Goto **WooCommerce -> Settings -> Product tab -> Display** and Check  *Redirect to the checkout page after successful addition*.
 
 == Changelog ==
+
+= 1.0.1 =
+
+- Change checkbox settings position
 
 = 1.0.0 =
 
