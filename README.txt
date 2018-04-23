@@ -1,17 +1,23 @@
-=== WooCommerce Cart Redirect To Checkout Page ===
+=== WooCommerce Add to Cart Redirect ===
 Contributors: EmranAhmed, getwooplugins
-Tags: woocommerce, checkout, cart, redirect, redirect to checkout, add to cart, added to cart
+Tags: cart redirect, redirect, redirect to checkout, redirect to page, add to cart redirect
 Requires at least: 4.7
 Tested up to: 4.9
 Requires PHP: 5.3
 Stable tag: trunk
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-After successfully product added to cart redirect to checkout page.
+After successfully product added to cart redirect to checkout page or any other page based on configuration.
 
 == Description ==
-The **WooCommerce Cart Redirect To Checkout Page** plugin for WooCommerce enables you to redirect directly checkout page rather than redirect to cart page.
+The **WooCommerce Add to Cart Redirect** plugin for WooCommerce enables you to redirect directly checkout page rather than redirect to cart page.
+
+= Key Feature Comes with this Plugin =
+
+* Redirect to any page.
+* Ajax add to cart redirect.
+* Simple installation and configuration.
 
 = Links =
 * [Github](https://github.com/EmranAhmed/woo-cart-redirect-to-checkout-page/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=Woo+AWS+S3+Readme&utm_content=Repo+Link)
@@ -53,9 +59,21 @@ If you are unable to use any of the methods due to internet connectivity and fil
 
 = How to enable checkout page redirect =
 
-- Goto **WooCommerce -> Settings -> Product tab -> Display** and Check  *Redirect to the checkout page after successful addition*.
+- Goto **WooCommerce -> Settings -> Products -> General** and choose a page to redirect  *Add to cart redirect to*.
+
+= Can I choose any page to redirect? =
+
+- Yes, you can redirect users on any page after product successfully added on cart.
+
+= Does it works on AJAX Add-to-Cart? =
+
+- Yes, it is.
 
 == Changelog ==
+
+= 2.0.0 =
+
+- Choose a specific page instead of redirecting only checkout page
 
 = 1.0.1 =
 
@@ -64,3 +82,9 @@ If you are unable to use any of the methods due to internet connectivity and fil
 = 1.0.0 =
 
 Initial release
+
+== Upgrade Notice ==
+
+= 2.0.0 =
+
+You have to change settings to choose which page to redirect.
