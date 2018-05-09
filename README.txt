@@ -1,6 +1,6 @@
 === WooCommerce Add to Cart Redirect ===
 Contributors: EmranAhmed, getwooplugins
-Tags: cart redirect, redirect, redirect to checkout, redirect to page, add to cart redirect
+Tags: add to cart redirect, redirect, redirect to checkout, redirect to page, redirect to page product
 Requires at least: 4.7
 Tested up to: 4.9
 Requires PHP: 5.3
@@ -20,7 +20,7 @@ The **WooCommerce Add to Cart Redirect** plugin for WooCommerce enables you to r
 * Simple installation and configuration.
 
 = Links =
-* [Github](https://github.com/EmranAhmed/woo-cart-redirect-to-checkout-page/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=Woo+AWS+S3+Readme&utm_content=Repo+Link)
+* [Github](https://github.com/EmranAhmed/woo-cart-redirect-to-checkout-page/?utm_medium=referral&utm_source=wordpress.org&utm_campaign=Woo+Cart+Redirect+Readme&utm_content=Repo+Link)
 
 == Installation ==
 
@@ -28,7 +28,7 @@ The **WooCommerce Add to Cart Redirect** plugin for WooCommerce enables you to r
 
 1. Login to your the admin panel
 2. Navigate to Plugins -> Add New
-3. Search **WooCommerce Cart Redirect To Checkout Page**
+3. Search **WooCommerce Add to Cart Redirect**
 4. Click install and activate respectively.
 
 ### Manual Install From WordPress Dashboard
@@ -70,6 +70,10 @@ If you are unable to use any of the methods due to internet connectivity and fil
 - Yes, it is.
 
 == Changelog ==
+
+= 2.0.1 =
+
+- Fix some known issue.
 
 = 2.0.0 =
 
