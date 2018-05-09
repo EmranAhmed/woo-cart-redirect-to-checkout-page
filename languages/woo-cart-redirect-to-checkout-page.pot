@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WooCommerce Add to Cart Redirect\n"
-"POT-Creation-Date: 2018-04-23 12:54+0600\n"
-"PO-Revision-Date: 2018-04-23 12:53+0600\n"
+"POT-Creation-Date: 2018-05-10 02:14+0600\n"
+"PO-Revision-Date: 2018-05-10 02:13+0600\n"
 "Last-Translator: Emran Ahmed <emran.bd.08@gmail.com>\n"
 "Language-Team: Emran Ahmed <emran.bd.08@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,35 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: woo-cart-redirect-to-checkout-page.php:121
+#: woo-cart-redirect-to-checkout-page.php:118
 msgid "Settings"
 msgstr ""
 
-#: woo-cart-redirect-to-checkout-page.php:133
-msgid "Add to cart redirect to"
+#: woo-cart-redirect-to-checkout-page.php:123
+msgid "Go Pro"
 msgstr ""
 
-#: woo-cart-redirect-to-checkout-page.php:139
+#: woo-cart-redirect-to-checkout-page.php:148
+msgid "Read Documentation"
+msgstr ""
+
+#: woo-cart-redirect-to-checkout-page.php:149
+msgid "Facing issue?"
+msgstr ""
+
+#: woo-cart-redirect-to-checkout-page.php:149
+msgid "Please open a ticket."
+msgstr ""
+
+#: woo-cart-redirect-to-checkout-page.php:214
+msgid "Add to cart behaviour"
+msgstr ""
+
+#: woo-cart-redirect-to-checkout-page.php:218
+msgid "Added to cart redirect to"
+msgstr ""
+
+#: woo-cart-redirect-to-checkout-page.php:224
 msgid "After item added to cart page will redirect to a specific page."
 msgstr ""
 
