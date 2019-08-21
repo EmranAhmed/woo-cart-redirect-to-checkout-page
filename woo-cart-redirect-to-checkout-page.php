@@ -1,15 +1,15 @@
 <?php
 	/**
-	 * Plugin Name:  WooCommerce Add to Cart Redirect
+	 * Plugin Name:  Add to Cart Redirect for WooCommerce
 	 * Plugin URI:   https://wordpress.org/plugins/woo-cart-redirect-to-checkout-page/
 	 * Description:  Redirect to checkout page or any other page after successfully product added to cart.
-	 * Version:      2.0.1
+	 * Version:      2.0.2
 	 * Author:       Emran Ahmed
 	 * Text Domain:  woo-cart-redirect-to-checkout-page
 	 * Requires at least: 4.5
-	 * Tested up to: 4.9
+	 * Tested up to: 5.2
 	 * WC requires at least: 2.7
-	 * WC tested up to: 3.3
+	 * WC tested up to: 3.7
 	 * Domain Path:  /languages
 	 * Author URI:   https://getwooplugins.com/
 	 * License:      GPLv3
@@ -22,9 +22,9 @@
 		
 		final class Woo_Cart_Redirect_To_Checkout_Page {
 			
-			protected $_version = '2.0.1';
+			protected $_version = '2.0.2';
 			
-			protected static $_instance = NULL;
+			protected static $_instance = null;
 			
 			public static function instance() {
 				if ( is_null( self::$_instance ) ) {
@@ -48,7 +48,7 @@
 				$this->define( 'WOO_CRTCP_PLUGIN_FILE', __FILE__ );
 			}
 			
-			public function define( $name, $value, $case_insensitive = FALSE ) {
+			public function define( $name, $value, $case_insensitive = false ) {
 				if ( ! defined( $name ) ) {
 					define( $name, $value, $case_insensitive );
 				}
@@ -81,7 +81,7 @@
 			}
 			
 			public function language() {
-				load_plugin_textdomain( 'woo-cart-redirect-to-checkout-page', FALSE, WOO_CRTCP_PLUGIN_DIRNAME . '/languages' );
+				load_plugin_textdomain( 'woo-cart-redirect-to-checkout-page', false, WOO_CRTCP_PLUGIN_DIRNAME . '/languages' );
 			}
 			
 			// @TODO: OLD WC
@@ -162,7 +162,7 @@
 				
 				$api_url = 'https://getwooplugins.com/wp-json/getwooplugins/v1/fetch-feed';
 				
-				if ( apply_filters( 'stop_gwp_live_feed', FALSE ) ) {
+				if ( apply_filters( 'stop_gwp_live_feed', false ) ) {
 					return;
 				}
 				
@@ -170,15 +170,15 @@
 					delete_transient( "gwp_com_live_feed" );
 				}
 				
-				if ( FALSE === ( $body = get_transient( 'gwp_com_live_feed' ) ) ) {
+				if ( false === ( $body = get_transient( 'gwp_com_live_feed' ) ) ) {
 					$response = wp_remote_get( $api_url, $args = array(
-						'sslverify' => FALSE,
+						'sslverify' => false,
 						'timeout'   => 45,
 						'body'      => array( 'item' => 'woo-cart-redirect-to-checkout-page', 'version' => $this->version() ),
 					) );
 					
 					if ( ! is_wp_error( $response ) && wp_remote_retrieve_response_code( $response ) == 200 ) {
-						$body = json_decode( wp_remote_retrieve_body( $response ), TRUE );
+						$body = json_decode( wp_remote_retrieve_body( $response ), true );
 						set_transient( "gwp_com_live_feed", $body, 6 * HOUR_IN_SECONDS );
 						
 						if ( isset( $_GET[ 'raw_gwp_com_live_feed' ] ) && isset( $body[ 'id' ] ) ) {
@@ -187,7 +187,7 @@
 					}
 				}
 				
-				if ( isset( $body[ 'id' ] ) && FALSE !== get_transient( "gwp_com_live_feed_seen_{$body[ 'id' ]}" ) ) {
+				if ( isset( $body[ 'id' ] ) && false !== get_transient( "gwp_com_live_feed_seen_{$body[ 'id' ]}" ) ) {
 					return;
 				}
 				
@@ -202,7 +202,7 @@
 						$user->nickname,
 					), $body[ 'message' ] );
 					
-					echo $message;
+					echo wp_kses_post( $message );
 				}
 			}
 			
